@@ -2,13 +2,17 @@ package com.example.base;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
+
 public class BaseApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(BaseApplication.class, args);
-		System.out.print("Hello world");
 	}
 
 }
+
